@@ -1,0 +1,26 @@
+<div class="container">
+  <div class="col-6">
+    <br>
+    <table class="table table-sm">
+      <caption style="color:black">
+        Promedio de temporadas: {{promedio}}
+      </caption>
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Nombre</th>
+          <th>Canal</th>
+          <th>Temporadas</th>
+        </tr>
+      </thead>
+      <tbody class="bg-light" *ngFor="let serie of seriesL">
+        <tr>
+          <td>{{serie.id}}</td>
+          <td style="color:dodgerblue">{{serie.name}}</td>
+          <td>{{serie.channel}}</td>
+          <td>{{serie.seasons}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
